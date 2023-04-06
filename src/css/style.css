@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(155deg, rgba(98,142,117,1) 0%, rgba(26,72,85,1) 100%);
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    width: 75%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    width: auto;
+}
+
+.navbar ul {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar ul .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul .nav-item a {
+    background: transparent;
+    color: #F9F9F9;
+    height: 20px;
+    cursor: pointer;
+}
+
+.navbar ul .nav-item a:hover {
+    transform: scale(1.1);
+    transition: 0.5 ease-in-out;
+}
+
+main {
+    width: 100vw;
+    height: calc(90vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto .criador {
+    color: #F9F9F9;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.texto h1 {
+    margin-top: 0.8vw;
+    margin-bottom: 1.5vw;
+    color: #F9F9F9;
+    width: 26rem;
+    font-weight: 900;
+    font-size: 4.25rem;
+    text-transform: uppercase;
+    line-height: 4.62rem;
+}
+
+.texto .descricao {
+    margin-bottom: 3vw;
+    color: #F9F9F9;
+    width: 26rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.botoes {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.botoes .assistir-agora {
+    background-color: #658E76;
+    color:#F9F9F9;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 45px;
+    transform: skew(-24deg);
+    cursor: pointer;
+}
+
+.botoes .assistir-agora:hover {
+    background-color: #363636;
+}
+
+.botoes .assistir-agora p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skew(24deg);
+    text-transform: uppercase;
+    gap: 5px;
+}
+
+.botoes .assistir-trailer {
+    background: transparent;
+    color:#F9F9F9;
+    border: 1px solid #F9F9F9;
+    width: 200px;
+    height: 45px;
+    transform: skew(-24deg);
+    cursor: pointer;
+}
+
+.botoes .assistir-trailer:hover {
+    background-color: #363636;
+    border: none;
+    outline: none;
+}
+
+.botoes .assistir-trailer p {
+    transform: skew(24deg);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes .assistir-trailer p a {
+    color: #F9F9F9;
+    text-decoration: none;
+}
+
+.imagem {
+    width: 50%;
+    max-height: 550px;
+    overflow: hidden;
+}
+
+.imagem img {
+    max-width: 50vw;
+    object-fit: cover;
+}
+
+@media Screen and (max-width: 1000px) {
+    .navbar {
+        width: 90%;
+    }
+    
+    .conteudo {
+        width: 90%;
+    }
+    
+    .imagem img {
+        max-width: 50vw;
+    }
+}
+
+@media Screen and (max-width: 950px) {
+    .conteudo {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .texto {
+        height: 60%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .texto .criador {
+        font-size: 1rem;
+    }
+
+    .texto h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .texto .descricao {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .imagem {
+        height: calc(40%-100px);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagem img {
+        height: 125%;
+        object-fit: cover;
+    }
+}
+
+@media Screen and (max-width: 760px) {
+    .texto h1 {
+        margin-bottom: 0.75vw;
+        width: 100%;
+    }
+
+    .botoes .assistir-agora {
+        margin-left: 3vw;
+    }
+}
+
+@media Screen and (max-width: 470px) {
+    .botoes .assistir-trailer {
+        display: none;
+    }
+}
