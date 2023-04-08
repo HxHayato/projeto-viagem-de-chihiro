@@ -127,6 +127,7 @@ main {
 
 .botoes button:hover {
     background-color: #658E76;
+    transition: all .55s ease;
 }
 
 .agora a {
@@ -237,12 +238,5 @@ main {
 
     .imagem {
         align-self: self-end;
-    }
-
-    .imagem img{
-        max-width: 500px;
-        height: 300px;
-        object-fit: cover;
-        width: 300px;
     }
 }
