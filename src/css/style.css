@@ -63,7 +63,6 @@ main {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 
 .conteudo {
@@ -191,8 +190,14 @@ main {
         font-size: 3.0rem;
     }
 
-    .botoes {
+    .botoes button {
+        margin-bottom: 8%;
+        display: none;
         justify-content: center;
+    }
+
+    .botoes .agora {
+        display: block;
     }
 
     .imagem {
@@ -201,7 +206,7 @@ main {
     }
 
     .imagem img{
-        max-width: 350px;
+        max-width: 50vh;
     }
 
 }
@@ -228,10 +233,6 @@ main {
 
     .botoes button a {
         font-size: 0.9rem;
-    }
-
-    .agora {
-        gap: 1vw;
     }
 
     .imagem {
